@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anunaya R Pillai | Data Scientist</title>
+  <meta name="description"
+    content="Portfolio of Anunaya R Pillai – Aspiring Data Scientist specializing in ML, Deep Learning, NLP, and Generative AI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ── CANVAS BACKGROUND ── -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">[</span>ARP<span class="logo-bracket">]</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-tag">// DATA SCIENTIST PORTFOLIO</div>
+      <h1 class="hero-name">
+        <span class="name-first">ANUNAYA</span>
+        <span class="name-last">R PILLAI</span>
+      </h1>
+      <p class="hero-subtitle" id="typingText"></p>
+      <div class="hero-stats">
+        <div class="stat-pill">
+          <span class="stat-icon">◈</span>
+          <span class="stat-value">98.6%</span>
+          <span class="stat-label">Best Student Award</span>
+        </div>
+        <div class="stat-pill">
+          <span class="stat-icon">◈</span>
+          <span class="stat-value">4+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-pill">
+          <span class="stat-icon">◈</span>
+          <span class="stat-value">30+</span>
+          <span class="stat-label">Students Mentored</span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary" id="viewProjectsBtn">View Projects</a>
+        <a href="#contact" class="btn-ghost" id="contactBtn">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orb-container">
+        <div class="radar-ring ring-1"></div>
+        <div class="radar-ring ring-2"></div>
+        <div class="radar-ring ring-3"></div>
+        <div class="radar-sweep"></div>
+        <div class="orb-core">
+          <span class="orb-icon">⬡</span>
+        </div>
+        <div class="radar-label label-ml" style="--angle:20deg">ML</div>
+        <div class="radar-label label-nlp" style="--angle:90deg">NLP</div>
+        <div class="radar-label label-cv" style="--angle:160deg">CV</div>
+        <div class="radar-label label-genai" style="--angle:230deg">GenAI</div>
+        <div class="radar-label label-dl" style="--angle:310deg">DL</div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 01</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <div class="about-avatar">
+            <div class="avatar-hex">
+              <span class="avatar-initials">ARP</span>
+            </div>
+            <div class="avatar-ring"></div>
+          </div>
+          <div class="about-info">
+            <p class="about-location">📍 Thiruvananthapuram, Kerala</p>
+            <a href="mailto:anunayarpillai@gmail.com" class="about-contact-item">✉ anunayarpillai@gmail.com</a>
+
+            <div class="about-socials">
+              <a href="www.linkedin.com/in/anunaya-r-399890286" target="_blank" class="social-pill"
+                id="linkedinLink">LinkedIn
+                ↗</a>
+              <a href="https://github.com/anunayaa" target="_blank" class="social-pill" id="githubLink">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="about-text glass-card">
+          <p class="about-para">Enthusiastic and detail-oriented aspiring <strong>Data Scientist</strong> with a strong
+            foundation in Python programming and hands-on experience across <strong>Machine Learning, Data Science,
+              Generative AI,</strong> and No-Code Development.</p>
+          <p class="about-para">A B.Tech graduate in Information Technology — proud recipient of the <strong>Best
+              Student Award</strong> during diploma studies with an exceptional score of <strong>98.6%</strong>.</p>
+          <p class="about-para">Demonstrated ability to apply theoretical knowledge to real-world scenarios, reflecting
+            both technical proficiency and analytical thinking. Aims to contribute to forward-thinking teams while
+            evolving as an impactful data science professional.</p>
+          <div class="edu-block">
+            <div class="edu-item">
+              <span class="edu-icon">🎓</span>
+              <div>
+                <strong>B.Tech – Information Technology</strong>
+                <span>University College of Engineering, Kariavattom · 2020–2024</span>
+              </div>
+            </div>
+            <div class="edu-item">
+              <span class="edu-icon">📜</span>
+              <div>
+                <strong>Diploma in Data Science</strong>
+                <span>Edure Learning, Trivandrum · Jan–Jun 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 02</span>
+        <h2 class="section-title">Skill System</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card glass-card" id="skill-python">
+          <div class="skill-card-header">
+            <span class="skill-icon">⚡</span>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--pct:90%"></div>
+          </div>
+          <span class="skill-pct">90%</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-ml">
+          <div class="skill-card-header">
+            <span class="skill-icon">🧠</span>
+            <h3>Machine Learning</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">Classification</span>
+            <span class="tag">Regression</span>
+            <span class="tag">Clustering</span>
+            <span class="tag">PCA</span>
+            <span class="tag">Streamlit</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--pct:85%"></div>
+          </div>
+          <span class="skill-pct">85%</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-dl">
+          <div class="skill-card-header">
+            <span class="skill-icon">🔬</span>
+            <h3>Deep Learning</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Keras</span>
+            <span class="tag">ANN</span>
+            <span class="tag">CNN</span>
+            <span class="tag">LSTM</span>
+            <span class="tag">Transfer Learning</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--pct:80%"></div>
+          </div>
+          <span class="skill-pct">80%</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-nlp">
+          <div class="skill-card-header">
+            <span class="skill-icon">💬</span>
+            <h3>NLP</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">NLTK</span>
+            <span class="tag">Regex</span>
+            <span class="tag">POS Tagging</span>
+            <span class="tag">NER</span>
+            <span class="tag">TF-IDF</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--pct:82%"></div>
+          </div>
+          <span class="skill-pct">82%</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-cv">
+          <div class="skill-card-header">
+            <span class="skill-icon">👁</span>
+            <h3>Computer Vision</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">OpenCV</span>
+            <span class="tag">Image Processing</span>
+            <span class="tag">Segmentation</span>
+            <span class="tag">Object Detection</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--pct:75%"></div>
+          </div>
+          <span class="skill-pct">75%</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-genai">
+          <div class="skill-card-header">
+            <span class="skill-icon">🚀</span>
+            <h3>Generative AI</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">LangChain</span>
+            <span class="tag">HuggingFace</span>
+            <span class="tag">Groq</span>
+            <span class="tag">RAG</span>
+            <span class="tag">FAISS</span>
+            <span class="tag">Ollama</span>
+            <span class="tag">Langsmith</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--pct:78%"></div>
+          </div>
+          <span class="skill-pct">78%</span>
+        </div>
+
+        <div class="skill-card glass-card skill-wide" id="skill-analytics">
+          <div class="skill-card-header">
+            <span class="skill-icon">📊</span>
+            <h3>Data Analytics & Visualization</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">NumPy</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">Matplotlib</span>
+            <span class="tag">Seaborn</span>
+            <span class="tag">EDA</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--pct:88%"></div>
+          </div>
+          <span class="skill-pct">88%</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 03</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card glass-card" id="proj-smartsummarizer">
+          <div class="project-number">01</div>
+          <div class="project-badge">NLP · Deep Learning</div>
+          <h3 class="project-title">SmartSummarizer</h3>
+          <p class="project-subtitle">Abstractive Text Summarization using BART</p>
+          <p class="project-desc">Developed and fine-tuned a BART-based deep learning model for abstractive text
+            summarization, achieving measurable improvements in F1, Precision, and Recall. Designed a full preprocessing
+            pipeline including tokenization, cleaning, and large-scale dataset visualization.</p>
+          <div class="project-tech">
+            <span class="tech-tag">BART</span>
+            <span class="tech-tag">Transformers</span>
+            <span class="tech-tag">HuggingFace</span>
+            <span class="tech-tag">Python</span>
+          </div>
+          <div class="project-metrics">
+            <span class="metric"><span class="metric-label">F1</span> ↑</span>
+            <span class="metric"><span class="metric-label">Precision</span> ↑</span>
+            <span class="metric"><span class="metric-label">Recall</span> ↑</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" id="proj-groqmind">
+          <div class="project-number">02</div>
+          <div class="project-badge">GenAI · LLM</div>
+          <h3 class="project-title">GroqMind</h3>
+          <p class="project-subtitle">AI-Powered Q&A Chatbot</p>
+          <p class="project-desc">Interactive AI-powered Q&A chatbot built with Streamlit, LangChain, and Groq APIs.
+            Features configurable LLM parameters, secure API key handling, dynamic chat history, and a responsive
+            real-time conversational UI.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Streamlit</span>
+            <span class="tech-tag">LangChain</span>
+            <span class="tech-tag">Groq</span>
+            <span class="tech-tag">Python</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/anunayaa/GroqMInd" target="_blank" class="proj-link"
+              id="groqmindGithubLink">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" id="proj-docsquery">
+          <div class="project-number">03</div>
+          <div class="project-badge">RAG · Vector DB</div>
+          <h3 class="project-title">DocsQuery</h3>
+          <p class="project-subtitle">RAG-Based Document QA System</p>
+          <p class="project-desc">Intelligent document-based Q&A system using RAG architecture with FAISS, LangChain,
+            and Groq. Features semantic search, context-aware responses with HuggingFace embeddings, multi-document
+            upload, vector indexing, and source chunk tracing.</p>
+          <div class="project-tech">
+            <span class="tech-tag">FAISS</span>
+            <span class="tech-tag">LangChain</span>
+            <span class="tech-tag">Llama 3.1</span>
+            <span class="tech-tag">Streamlit</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" id="proj-cardguardian">
+          <div class="project-number">04</div>
+          <div class="project-badge">ML · Fraud Detection</div>
+          <h3 class="project-title">CardGuardian</h3>
+          <p class="project-subtitle">Credit Card Fraud Detection</p>
+          <p class="project-desc">Fraud detection system using PCA-transformed dataset with comprehensive model
+            comparison: Logistic Regression, SVM, Random Forest, AdaBoost, CatBoost, XGBoost, and LightGBM. Evaluated
+            using Accuracy, Precision, Recall, F1, ROC-AUC and Confusion Matrix.</p>
+          <div class="project-tech">
+            <span class="tech-tag">XGBoost</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">PCA</span>
+            <span class="tech-tag">LightGBM</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 04</span>
+        <h2 class="section-title">Experience</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="exp-timeline">
+        <div class="exp-card glass-card" id="exp-dexpro">
+          <div class="exp-dot"></div>
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">Data Science Intern</h3>
+              <p class="exp-company">Dexpro Innovations Pvt. Ltd · Trivandrum</p>
+            </div>
+            <span class="exp-date">Jul 2025 – Nov 2025</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Worked across <strong>No-Code Development, Data Science,</strong> and <strong>Generative AI</strong>
+              domains</li>
+            <li>Contributed to <strong>2 external projects</strong>, supporting development and implementation</li>
+            <li>Mentored <strong>30+ students</strong> in technical concepts and project guidance</li>
+            <li>Learned and applied No-Code tools and workflows in a new domain</li>
+            <li>Supported the launch of a No-Code course, assisting with content and project development</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="tag">GenAI</span>
+            <span class="tag">No-Code</span>
+            <span class="tag">Mentoring</span>
+            <span class="tag">Data Science</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 05</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info glass-card">
+          <p class="contact-intro">Open to opportunities in Data Science, ML, and AI. Let's build something impactful
+            together!</p>
+          <div class="contact-items">
+            <a href="mailto:anunayarpillai@gmail.com" class="contact-item" id="emailContactLink">
+              <span class="contact-item-icon">✉</span>
+              <div>
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-value">anunayarpillai@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/anunaya" target="_blank" class="contact-item" id="linkedinContactLink">
+              <span class="contact-item-icon">in</span>
+              <div>
+                <span class="contact-item-label">LinkedIn</span>
+                <span class="contact-item-value">www.linkedin.com/in/anunaya-r-399890286</span>
+              </div>
+            </a>
+            <a href="https://github.com/anunayaa" target="_blank" class="contact-item" id="githubContactLink">
+              <span class="contact-item-icon">⌥</span>
+              <div>
+                <span class="contact-item-label">GitHub</span>
+                <span class="contact-item-value">github.com/anunayaa</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form glass-card" id="contactForm">
+          <div class="form-group">
+            <label for="formName">Name</label>
+            <input type="text" id="formName" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="formEmail">Email</label>
+            <input type="email" id="formEmail" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="formMessage">Message</label>
+            <textarea id="formMessage" rows="4" placeholder="Tell me about the opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" id="formSubmitBtn">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">[ARP]</span>
+      <span class="footer-copy">© 2025 Anunaya R Pillai · Crafted with 💜</span>
+      <div class="footer-links">
+        <a href="www.linkedin.com/in/anunaya-r-399890286" target="_blank">LinkedIn</a>
+        <a href="https://github.com/anunayaa" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
