@@ -12,10 +12,10 @@ window.addEventListener('scroll', () => {
 
 // ── TYPING ANIMATION ──
 const phrases = [
-  'Aspiring Data Scientist',
-  'ML & Deep Learning Engineer',
-  'Generative AI Builder',
-  'NLP Enthusiast'
+  'Generative AI Engineer',
+  'ML & DL Engineer',
+  'Data Scientist',
+  'NLP Engineer'
 ];
 let pi = 0, ci = 0, deleting = false;
 const el = document.getElementById('typingText');
@@ -97,17 +97,6 @@ const io = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 revealEls.forEach(el => io.observe(el));
-
-// ── SKILL BARS ANIMATE ON SCROLL ──
-const barObserver = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.querySelectorAll('.skill-bar').forEach(b => b.classList.add('animated'));
-      barObserver.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.3 });
-document.querySelectorAll('.skill-card').forEach(c => barObserver.observe(c));
 
 // ── CONTACT FORM ──
 document.getElementById('contactForm')?.addEventListener('submit', function(e) {

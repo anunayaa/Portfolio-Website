@@ -12,7 +12,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=1.3" />
 </head>
 
 <body>
@@ -42,48 +42,51 @@
   <!-- ── HERO ── -->
   <section id="hero">
     <div class="hero-content">
-      <div class="hero-tag">// DATA SCIENTIST PORTFOLIO</div>
       <h1 class="hero-name">
         <span class="name-first">ANUNAYA</span>
         <span class="name-last">R PILLAI</span>
       </h1>
       <p class="hero-subtitle" id="typingText"></p>
-      <div class="hero-stats">
-        <div class="stat-pill">
-          <span class="stat-icon">◈</span>
-          <span class="stat-value">98.6%</span>
-          <span class="stat-label">Best Student Award</span>
-        </div>
-        <div class="stat-pill">
-          <span class="stat-icon">◈</span>
-          <span class="stat-value">4+</span>
-          <span class="stat-label">Projects</span>
-        </div>
-        <div class="stat-pill">
-          <span class="stat-icon">◈</span>
-          <span class="stat-value">30+</span>
-          <span class="stat-label">Students Mentored</span>
-        </div>
-      </div>
       <div class="hero-actions">
         <a href="#projects" class="btn-primary" id="viewProjectsBtn">View Projects</a>
         <a href="#contact" class="btn-ghost" id="contactBtn">Get in Touch</a>
       </div>
     </div>
     <div class="hero-visual">
-      <div class="orb-container">
-        <div class="radar-ring ring-1"></div>
-        <div class="radar-ring ring-2"></div>
-        <div class="radar-ring ring-3"></div>
-        <div class="radar-sweep"></div>
-        <div class="orb-core">
-          <span class="orb-icon">⬡</span>
+      <div class="atom-system">
+        <div class="sun">
+          <span class="sun-label">AI Engineer</span>
         </div>
-        <div class="radar-label label-ml" style="--angle:20deg">ML</div>
-        <div class="radar-label label-nlp" style="--angle:90deg">NLP</div>
-        <div class="radar-label label-cv" style="--angle:160deg">CV</div>
-        <div class="radar-label label-genai" style="--angle:230deg">GenAI</div>
-        <div class="radar-label label-dl" style="--angle:310deg">DL</div>
+        
+        <div class="orbit-wrapper orbit-w-python">
+          <div class="orbit orbit-python">
+            <div class="planet planet-python" data-name="Python"></div>
+          </div>
+        </div>
+        
+        <div class="orbit-wrapper orbit-w-ml">
+          <div class="orbit orbit-ml">
+            <div class="planet planet-ml" data-name="ML"></div>
+          </div>
+        </div>
+        
+        <div class="orbit-wrapper orbit-w-nlp">
+          <div class="orbit orbit-nlp">
+            <div class="planet planet-nlp" data-name="NLP"></div>
+          </div>
+        </div>
+        
+        <div class="orbit-wrapper orbit-w-dl">
+          <div class="orbit orbit-dl">
+            <div class="planet planet-dl" data-name="DL"></div>
+          </div>
+        </div>
+        
+        <div class="orbit-wrapper orbit-w-genai">
+          <div class="orbit orbit-genai">
+            <div class="planet planet-genai" data-name="GenAI"></div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="scroll-hint">
@@ -169,10 +172,20 @@
             <span class="tag">Python</span>
             <span class="tag">SQL</span>
           </div>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar" style="--pct:90%"></div>
+        </div>
+
+        <div class="skill-card glass-card skill-wide" id="skill-analytics">
+          <div class="skill-card-header">
+            <span class="skill-icon">📊</span>
+            <h3>Data Analytics & Visualization</h3>
           </div>
-          <span class="skill-pct">90%</span>
+          <div class="skill-tags">
+            <span class="tag">NumPy</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">Matplotlib</span>
+            <span class="tag">Seaborn</span>
+            <span class="tag">EDA</span>
+          </div>
         </div>
 
         <div class="skill-card glass-card" id="skill-ml">
@@ -188,10 +201,6 @@
             <span class="tag">PCA</span>
             <span class="tag">Streamlit</span>
           </div>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar" style="--pct:85%"></div>
-          </div>
-          <span class="skill-pct">85%</span>
         </div>
 
         <div class="skill-card glass-card" id="skill-dl">
@@ -207,10 +216,6 @@
             <span class="tag">LSTM</span>
             <span class="tag">Transfer Learning</span>
           </div>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar" style="--pct:80%"></div>
-          </div>
-          <span class="skill-pct">80%</span>
         </div>
 
         <div class="skill-card glass-card" id="skill-nlp">
@@ -225,10 +230,6 @@
             <span class="tag">NER</span>
             <span class="tag">TF-IDF</span>
           </div>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar" style="--pct:82%"></div>
-          </div>
-          <span class="skill-pct">82%</span>
         </div>
 
         <div class="skill-card glass-card" id="skill-cv">
@@ -242,10 +243,6 @@
             <span class="tag">Segmentation</span>
             <span class="tag">Object Detection</span>
           </div>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar" style="--pct:75%"></div>
-          </div>
-          <span class="skill-pct">75%</span>
         </div>
 
         <div class="skill-card glass-card" id="skill-genai">
@@ -262,28 +259,6 @@
             <span class="tag">Ollama</span>
             <span class="tag">Langsmith</span>
           </div>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar" style="--pct:78%"></div>
-          </div>
-          <span class="skill-pct">78%</span>
-        </div>
-
-        <div class="skill-card glass-card skill-wide" id="skill-analytics">
-          <div class="skill-card-header">
-            <span class="skill-icon">📊</span>
-            <h3>Data Analytics & Visualization</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="tag">NumPy</span>
-            <span class="tag">Pandas</span>
-            <span class="tag">Matplotlib</span>
-            <span class="tag">Seaborn</span>
-            <span class="tag">EDA</span>
-          </div>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar" style="--pct:88%"></div>
-          </div>
-          <span class="skill-pct">88%</span>
         </div>
 
       </div>
@@ -319,6 +294,10 @@
             <span class="metric"><span class="metric-label">Precision</span> ↑</span>
             <span class="metric"><span class="metric-label">Recall</span> ↑</span>
           </div>
+          <div class="project-links">
+            <a href="https://github.com/anunayaa/SmartSummarizer" target="_blank" class="proj-link"
+              id="smartsummarizerGithubLink">GitHub ↗</a>
+          </div>
         </div>
 
         <div class="project-card glass-card" id="proj-groqmind">
@@ -345,7 +324,7 @@
           <div class="project-number">03</div>
           <div class="project-badge">RAG · Vector DB</div>
           <h3 class="project-title">DocsQuery</h3>
-          <p class="project-subtitle">RAG-Based Document QA System</p>
+          <p class="project-subtitle">RAG-Based Document Q&A System</p>
           <p class="project-desc">Intelligent document-based Q&A system using RAG architecture with FAISS, LangChain,
             and Groq. Features semantic search, context-aware responses with HuggingFace embeddings, multi-document
             upload, vector indexing, and source chunk tracing.</p>
@@ -355,11 +334,15 @@
             <span class="tech-tag">Llama 3.1</span>
             <span class="tech-tag">Streamlit</span>
           </div>
+          <div class="project-links">
+            <a href="https://github.com/anunayaa/DocsQuery" target="_blank" class="proj-link"
+              id="docsqueryGithubLink">GitHub ↗</a>
+          </div>
         </div>
 
         <div class="project-card glass-card" id="proj-cardguardian">
           <div class="project-number">04</div>
-          <div class="project-badge">ML · Fraud Detection</div>
+          <div class="project-badge">ML · TensorFlow · Keras</div>
           <h3 class="project-title">CardGuardian</h3>
           <p class="project-subtitle">Credit Card Fraud Detection</p>
           <p class="project-desc">Fraud detection system using PCA-transformed dataset with comprehensive model
@@ -370,6 +353,10 @@
             <span class="tech-tag">Scikit-learn</span>
             <span class="tech-tag">PCA</span>
             <span class="tech-tag">LightGBM</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/anunayaa/CardGuardian" target="_blank" class="proj-link"
+              id="cardguardianGithubLink">GitHub ↗</a>
           </div>
         </div>
 
@@ -405,7 +392,7 @@
           </ul>
           <div class="exp-tags">
             <span class="tag">GenAI</span>
-            <span class="tag">No-Code</span>
+            <span class="tag">No-Code Development</span>
             <span class="tag">Mentoring</span>
             <span class="tag">Data Science</span>
           </div>
