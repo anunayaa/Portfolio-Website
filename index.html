@@ -53,42 +53,56 @@
       </div>
     </div>
     <div class="hero-visual">
-      <div class="atom-system">
-        <div class="sun">
-          <span class="sun-label">AI Engineer</span>
-        </div>
-        
-        <div class="orbit-wrapper orbit-w-python">
-          <div class="orbit orbit-python">
-            <div class="planet planet-python" data-name="Python"></div>
-          </div>
-        </div>
-        
-        <div class="orbit-wrapper orbit-w-ml">
-          <div class="orbit orbit-ml">
-            <div class="planet planet-ml" data-name="ML"></div>
-          </div>
-        </div>
-        
-        <div class="orbit-wrapper orbit-w-nlp">
-          <div class="orbit orbit-nlp">
-            <div class="planet planet-nlp" data-name="NLP"></div>
-          </div>
-        </div>
-        
-        <div class="orbit-wrapper orbit-w-dl">
-          <div class="orbit orbit-dl">
-            <div class="planet planet-dl" data-name="DL"></div>
-          </div>
-        </div>
-        
-        <div class="orbit-wrapper orbit-w-genai">
-          <div class="orbit orbit-genai">
-            <div class="planet planet-genai" data-name="GenAI"></div>
-          </div>
-        </div>
-      </div>
+  <div class="neural-network">
+    <svg class="nn-svg" viewBox="0 0 640 460" xmlns="http://www.w3.org/2000/svg">
+      <g class="nn-lines">
+        <line x1="70" y1="70" x2="280" y2="150"/>
+        <line x1="70" y1="70" x2="280" y2="310"/>
+        <line x1="70" y1="230" x2="280" y2="150"/>
+        <line x1="70" y1="230" x2="280" y2="310"/>
+        <line x1="70" y1="390" x2="280" y2="150"/>
+        <line x1="70" y1="390" x2="280" y2="310"/>
+
+        <line x1="280" y1="150" x2="480" y2="70"/>
+        <line x1="280" y1="150" x2="480" y2="230"/>
+        <line x1="280" y1="150" x2="480" y2="390"/>
+        <line x1="280" y1="310" x2="480" y2="70"/>
+        <line x1="280" y1="310" x2="480" y2="230"/>
+        <line x1="280" y1="310" x2="480" y2="390"/>
+
+        <line x1="480" y1="70" x2="600" y2="230"/>
+        <line x1="480" y1="230" x2="600" y2="230"/>
+        <line x1="480" y1="390" x2="600" y2="230"/>
+      </g>
+
+      <circle class="nn-pulse" r="4">
+        <animateMotion dur="2.2s" repeatCount="indefinite" path="M70,70 L280,150 L480,70 L600,230"/>
+      </circle>
+      <circle class="nn-pulse" r="4">
+        <animateMotion dur="2.6s" begin="0.4s" repeatCount="indefinite" path="M70,230 L280,310 L480,230 L600,230"/>
+      </circle>
+      <circle class="nn-pulse" r="4">
+        <animateMotion dur="3s" begin="0.9s" repeatCount="indefinite" path="M70,390 L280,150 L480,390 L600,230"/>
+      </circle>
+      <circle class="nn-pulse" r="4">
+        <animateMotion dur="2.4s" begin="1.3s" repeatCount="indefinite" path="M70,70 L280,310 L480,230 L600,230"/>
+      </circle>
+    </svg>
+
+    <div class="nn-node nn-c-blue"  style="left:42px; top:42px;"  data-name="Python"></div>
+
+    <div class="nn-node nn-c-green"  style="left:252px; top:122px;" data-name="ML"></div>
+    <div class="nn-node nn-c-orange" style="left:252px; top:282px;" data-name="DL"></div>
+
+    <div class="nn-node nn-c-pink"   style="left:452px; top:42px;"  data-name="NLP"></div>
+    <div class="nn-node nn-c-cyan"   style="left:452px; top:202px;" data-name="CV"></div>
+    <div class="nn-node nn-c-violet" style="left:452px; top:362px;" data-name="GenAI"></div>
+
+    <div class="nn-core" style="left:555px; top:185px;">
+      <span>AI<br>Engineer</span>
     </div>
+  </div>
+</div>
     <div class="scroll-hint">
       <span>Scroll Down</span>
       <div class="scroll-arrow"></div>
@@ -170,7 +184,6 @@
           </div>
           <div class="skill-tags">
             <span class="tag">Python</span>
-            <span class="tag">SQL</span>
           </div>
         </div>
 
@@ -181,7 +194,6 @@
           </div>
           <div class="skill-tags">
             <span class="tag">NumPy</span>
-            <span class="tag">Pandas</span>
             <span class="tag">Matplotlib</span>
             <span class="tag">Seaborn</span>
             <span class="tag">EDA</span>
